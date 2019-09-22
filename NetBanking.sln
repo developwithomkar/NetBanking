@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetBanking.Domain.Core", "N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBanking.Infra.Bus", "NetBanking.Infra.Bus\NetBanking.Infra.Bus.csproj", "{BCE1B540-18AC-4CEF-A89F-B8D59F73C39D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBanking.Infra.IoC", "NetBanking.Infra.IoC\NetBanking.Infra.IoC.csproj", "{ACF704AD-1D57-4058-8E94-EBF4BB982CEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{BCE1B540-18AC-4CEF-A89F-B8D59F73C39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE1B540-18AC-4CEF-A89F-B8D59F73C39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE1B540-18AC-4CEF-A89F-B8D59F73C39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF704AD-1D57-4058-8E94-EBF4BB982CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF704AD-1D57-4058-8E94-EBF4BB982CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF704AD-1D57-4058-8E94-EBF4BB982CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF704AD-1D57-4058-8E94-EBF4BB982CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{56C5E2A0-926C-434A-8F18-E060EDC1469D} = {D2C1D6FA-FF54-4F57-B3A2-9CBD4A577E28}
 		{BCE1B540-18AC-4CEF-A89F-B8D59F73C39D} = {826925A5-1F74-4833-93B4-B532B0091DFD}
+		{ACF704AD-1D57-4058-8E94-EBF4BB982CEB} = {E2F87B48-17EE-4564-A62A-2D941CB74F9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56B45120-FA4C-4867-90CE-7D351EAA06AF}

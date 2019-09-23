@@ -9,6 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NetBanking.Banking.Application\NetBanking.Banking.Application.csproj" />
+    <ProjectReference Include="..\NetBanking.Banking.Data\NetBanking.Banking.Data.csproj" />
     <ProjectReference Include="..\NetBanking.Domain.Core\NetBanking.Domain.Core.csproj" />
     <ProjectReference Include="..\NetBanking.Infra.Bus\NetBanking.Infra.Bus.csproj" />
   </ItemGroup>

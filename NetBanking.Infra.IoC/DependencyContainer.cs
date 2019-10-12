@@ -1,8 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using NetBanking.Banking.Application.Interfaces;
 using NetBanking.Banking.Application.Services;
 using NetBanking.Banking.Data.Context;
 using NetBanking.Banking.Data.Repository;
+using NetBanking.Banking.Domain.CommandHandlers;
+using NetBanking.Banking.Domain.Commands;
 using NetBanking.Banking.Domain.Interfaces;
 using NetBanking.Domain.Core.Events;
 using NetBanking.Infra.Bus;
@@ -18,6 +21,9 @@ namespace NetBanking.Infra.IoC
         {
             //Domain.Bus == RabbitMQ
             services.AddTransient<IEventBus, RabbitMQBus>();
+
+            //Banking commands
+            services.AddTransient<IRequestHandler<InitiateTransferCommand, bool>, TransferCommandHandler>();
 
             //App layer services
             services.AddTransient<IAccountService, AccountService>();
